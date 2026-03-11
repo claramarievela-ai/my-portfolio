@@ -30,6 +30,30 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
+.hero {
+  padding: 80px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero img {
+  border-radius: 8px;
+}
+
+.tagline {
+  font-weight: 700;
+}
+.hero p {
+  padding-top: 20px;
+}
+.accent {
+  background: linear-gradient(90deg, #ff6b6b, #ff4757, #ff8e53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .logo {
   color: var(--accent);
   font-size: 1.3rem;
@@ -39,15 +63,83 @@ body {
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 
 .navbar a {
   color: var(--text);
   text-decoration: none;
   font-size: 0.95rem;
+  transition: color 0.3s ease;
 }
 
 .navbar a:hover {
   color: var(--accent);
+}
+
+.btn {
+  background-color: var(--accent);
+  color: #ffffff !important;
+  padding: 15px 28px;
+  margin: 50px 10px 10px 0;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.95rem;
+  display: inline-block;
+}
+
+.projects {
+  background-color: var(--surface);
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.section-title {
+  color: var(--text);
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 4px 20px rgba(255, 107, 107, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.project-card:hover {
+  border-left: 3px solid var(--accent-hover);
+  box-shadow: 0 4px 25px rgba(255, 107, 107, 0.25);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
 }
