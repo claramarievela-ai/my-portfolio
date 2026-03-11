@@ -38,6 +38,12 @@ body {
   gap: 40px;
 }
 
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px #fff;
+}
+
 .hero img {
   border-radius: 8px;
 }
@@ -47,11 +53,14 @@ body {
 }
 .hero p {
   padding-top: 20px;
+  padding-right: 200px;
 }
+
 .accent {
   background: linear-gradient(90deg, #ff6b6b, #ff4757, #ff8e53);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px var(--accent);
 }
 
 .logo {
@@ -142,4 +151,33 @@ body {
   box-shadow: 0 4px 25px rgba(255, 107, 107, 0.25);
   transform: translateY(-5px);
   transition: all 0.3s ease;
+}
+
+footer {
+  background-color: var(--navbar);
+  border-top: 2px solid var(--accent);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-name {
+  color: var(--accent);
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--text-muted);
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
+.footer-copy {
+  color: var(--text);
+  font-size: 0.8rem;
 }
